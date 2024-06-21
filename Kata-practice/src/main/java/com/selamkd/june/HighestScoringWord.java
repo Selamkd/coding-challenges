@@ -11,14 +11,14 @@ public class HighestScoringWord {
         String[] strArr = str.split(" ");
         String highestScoringWord = "";
         int highestScore = 0;
-        for (int i = 0; i < strArr.length; i++) {
+        for (String s : strArr) {
             int score = 0;
-            for (int j = 0; j < strArr[i].length(); j++) {
-                score += getCharScore(strArr[i].charAt(j));
+            for (int j = 0; j < s.length(); j++) {
+                score += getCharScore(s.charAt(j));
             }
             if (score > highestScore) {
                 highestScore = score;
-                highestScoringWord = strArr[i];
+                highestScoringWord = s;
             }
         }
         return highestScoringWord;
