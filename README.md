@@ -30,4 +30,4 @@ The katas in this repository are sourced from:
 
 - [Codewars](https://www.codewars.com/)
 - [LeetCode](https://leetcode.com/)
-- [Codurance](https://codurance.com/)
+- [Codurance](https://codurance.com/katas)
