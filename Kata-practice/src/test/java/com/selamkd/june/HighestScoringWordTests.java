@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.selamkd.june.HighestScoringWord.getHighestScoringWord;
+import static com.selamkd.june.highestscoringword.HighestScoringWord.getHighestScoringWord;
 
 
 public class HighestScoringWordTests {
 
     @Test
-    @DisplayName("Should return the highest scoring word ")
+    @DisplayName("Given 'Vanilla scented candle' should return - vanilla")
     void shouldReturnTheHighestScoringWord() {
 
         String input = "Vanilla scented candle";
@@ -23,7 +23,7 @@ public class HighestScoringWordTests {
     }
     
     @Test
-    @DisplayName("given man i need taxi, should return taxi")
+    @DisplayName("given 'man i need taxi', should return taxi")
     void givenManINeedTaxiShouldReturnTaxi() {
 
         String input = "man i need a taxi up to ubud";
@@ -33,5 +33,17 @@ public class HighestScoringWordTests {
 
         Assertions.assertEquals(actual, expected);
         
+    }
+    @Test
+    @DisplayName("given 'take me to semynak', should return semynak")
+    void givenTakeMeToSemynakShouldReturnSemynak() {
+
+        String input = "take me to semynak";
+        String expected = "semynak";
+
+        String actual = getHighestScoringWord(input);
+
+        Assertions.assertEquals(actual, expected);
+
     }
 }

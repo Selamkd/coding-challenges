@@ -1,3 +1,6 @@
+#### Morning Routine                                                                            ##### 21 Jun 2024
+[Codurance](https://www.codurance.com/katas/morning-routine-kata)
+
 As a forgetful person, I need to remember my morning routine. Because of this, I have created a program that, depending on the time of day, will tell me what I should be doing:
 
 From 06:00 to 06:59 - Do exercise

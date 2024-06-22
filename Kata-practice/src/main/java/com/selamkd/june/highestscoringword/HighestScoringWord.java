@@ -1,4 +1,4 @@
-package com.selamkd.june;
+package com.selamkd.june.highestscoringword;
 
 public class HighestScoringWord {
 
