@@ -14,7 +14,6 @@ public class GroupAnagramsTests {
 
 
    @Test
-   @Disabled
    @DisplayName("Given input 'eat, tea , tan , ate , nat , bat ', should return  [[bat],[nat, tan ],[ ate , eat , tea]]")
    void givenInputEatTeaTanAteNatBatShouldReturnBatNatTanAteEatTea() {
     String [] input = {"eat","tea", "tan", "ate", "nat", "bat"};
