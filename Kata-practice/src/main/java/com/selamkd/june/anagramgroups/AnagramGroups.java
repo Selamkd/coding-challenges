@@ -22,7 +22,7 @@ public class AnagramGroups {
             groupAnagrams.get(sortedString).add(str);
 
         }
-       groupedAnagrams = new ArrayList<>(groupAnagrams.values());
+        groupedAnagrams = new ArrayList<>(groupAnagrams.values());
         groupedAnagrams.sort(Comparator.comparingInt(List::size));
 
         for(List<String> group: groupedAnagrams){
