@@ -24,6 +24,10 @@ public class AnagramGroups {
         }
        groupedAnagrams = new ArrayList<>(groupAnagrams.values());
         groupedAnagrams.sort(Comparator.comparingInt(List::size));
+
+        for(List<String> group: groupedAnagrams){
+            group.sort(Comparator.comparing(Object::toString));
+        }
         return groupedAnagrams;
     }
 
