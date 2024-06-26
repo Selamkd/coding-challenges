@@ -4,10 +4,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class MyMorningRoutine  {
-
-    public static void main(String[] args) {
-
-    }
     public static String  whatShouldIDoNow(LocalDateTime now){
 
         int hour = now.getHour();

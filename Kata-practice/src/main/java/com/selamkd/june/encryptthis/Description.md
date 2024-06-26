@@ -1,8 +1,7 @@
 ### Encrypt this!
-
-### 23 Jun 2024
 [Encrypt this](https://www.codewars.com/kata/5848565e273af816fb000449/train/java)
 
+#### 23 Jun 2024
 Encrypt this!
 
 You want to create secret messages.

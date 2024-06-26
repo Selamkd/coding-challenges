@@ -7,7 +7,6 @@ public class AnagramGroups {
 
     public static List<List<String>> groupAnagrams (String[] strArr){
         List<List<String>> groupedAnagrams;
-
         HashMap<String, List<String>> groupAnagrams = new HashMap<>();
 
         for(String str: strArr){

@@ -1,11 +1,6 @@
 package com.selamkd.june.highestscoringword;
 
 public class HighestScoringWord {
-
-    public static void main(String[] args) {
-
-
-    }
     public static String getHighestScoringWord (String str){
         str = str.toLowerCase();
         String[] strArr = str.split(" ");
@@ -14,7 +9,7 @@ public class HighestScoringWord {
         for (String s : strArr) {
             int score = 0;
             for (int j = 0; j < s.length(); j++) {
-                score += getCharScore(s.charAt(j));
+                score += getCharPosition(s.charAt(j));
             }
             if (score > highestScore) {
                 highestScore = score;
@@ -24,7 +19,7 @@ public class HighestScoringWord {
         return highestScoringWord;
     }
 
-    private static int getCharScore(char letter){
+    public static int getCharPosition(char letter){
         char letterLower = Character.toLowerCase(letter);
         if(letterLower >= 'a' && letter <= 'z'){
 
