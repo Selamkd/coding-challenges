@@ -8,6 +8,10 @@ public class SongBird {
 
     enum Bird{
         BIRD_A, BIRD_B, BIRD_C, BIRD_D
+    }  
+
+    public static getSongBirdCount(Branch branch, Bird, bird){
+
     }
 
 
