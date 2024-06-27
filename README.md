@@ -8,6 +8,7 @@ This repository is dedicated to improving my problem-solving skills through regu
   1. Clone the repository: 
 
 ``https://github.com/Selamkd/coding-challenges.git``
+
 ### Usage
 Navigate through the repository to find katas. Each kata has:
 
