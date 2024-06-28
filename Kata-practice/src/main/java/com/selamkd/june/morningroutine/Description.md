@@ -1,4 +1,4 @@
-### Morning Routine                                                                            ##### 21 Jun 2024
+### Morning Routine                                                                           
 [MorningRoutine](https://www.codurance.com/katas/morning-routine-kata)
 
 #### 21 Jun 2024
@@ -27,11 +27,22 @@ When I request the routine activity
 Then the system should display "No activity"
 
 From 06:00 to 06:59 - Do exercise
+
 From 07:00 to 07:29 - Read
+
 From 07:30 to 07:59 - Study
+
 From 08:00 to 08:59 - Have breakfast
+
 From 06:00 to 06:44 - Do exercise
+
 From 06:45 to 06:59 - Take a shower
+
 From 07:00 to 07:29 - Read
+
 From 07:30 to 07:59 - Study
+
 From 08:00 to 09:00 - Have breakfast
+
+
+~~
