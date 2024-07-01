@@ -7,21 +7,20 @@ public class FirstNonRepeatingChar {
 
     public static String firstNonRepeatingChar(String str) {
         HashMap<Character, Integer>  countDuplicates = new HashMap<>();
-        String result = " ";
         char[] charArr = str.toCharArray();
 
         for(char ch : charArr){
-            countDuplicates.put(ch, countDuplicates.getOrDefault(ch,0) + 1);
+            char lowerCh = Character.toLowerCase(ch);
+            countDuplicates.put(lowerCh, countDuplicates.getOrDefault(lowerCh,0) + 1);
         }
 
 
-        for(Map.Entry<Character, Integer> entry : countDuplicates.entrySet()) {
-            int count = entry.getValue();
-            char letter = entry.getKey();
-            if(count <= 1){
-                result = String.valueOf(letter);
+        for(char ch: charArr) {
+          char lowerCh = Character.toLowerCase(ch);
+            if( countDuplicates.get(lowerCh) == 1){
+               return String.valueOf(ch);
             }
         }
-        return result;
+        return " ";
     }
 }
