@@ -1,7 +1,7 @@
 ### Human readable duration format
 [Human readable duration format](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/java)
 
-#### 04 Jul 2024
+#### 03 Jul 2024
 
 Your task in order to complete this Kata is to **write a function which formats a duration, given as a number of seconds, in a human-friendly way.**
 
