@@ -1,5 +1,5 @@
 ### Human readable duration format
-[Human readable duration format](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/java)
+[Human readable duration format](https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/java)
 
 #### 03 Jul 2024
 

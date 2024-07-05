@@ -3,7 +3,7 @@ package com.selamkd.July.TimeFormatter;
 public class TimeFormatter {
     public static void main(String[] args) {
 
-        System.out.println(formatDuration(120));
+        System.out.println(formatDuration(8110951));
     }
     public static String formatDuration(int seconds) {
 
@@ -15,9 +15,9 @@ public class TimeFormatter {
         }
         StringBuilder result  = new StringBuilder();
 
-        if(seconds > 31536000 ){
-            int years = (int) (seconds/ 31536000);
-            seconds = seconds -  31536000;
+        if(seconds > 31622400  ){
+            int years = (int) (seconds/ 31622400 );
+            seconds = seconds -  31622400 ;
             result.append(years).append( years == 1 ?  "year," : " years ");
         }
 
