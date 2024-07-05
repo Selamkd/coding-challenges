@@ -1,5 +1,5 @@
 ### Simple Calculator
-[SimpleCalculator]("https://www.codurance.com/katas/string-calculator");
+[SimpleCalculator]("https://www.codurance.com/katas/string-calculator")
 
 #### 05 Jul 2024
 
