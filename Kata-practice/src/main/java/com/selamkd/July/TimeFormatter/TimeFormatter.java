@@ -16,25 +16,25 @@ public class TimeFormatter {
         StringBuilder result  = new StringBuilder();
 
         if(seconds > 31622400  ){
-            int years = (int) (seconds/ 31622400 );
+            int years = (int) (seconds % 31622400 );
             seconds = seconds -  31622400 ;
             result.append(years).append( years == 1 ?  "year," : " years ");
         }
 
         if(seconds > 86400){
-            int days = seconds/ 86400;
+            int days = seconds % 86400;
             seconds = seconds - 86400;
             result.append(days).append( days == 1 ? " day, " : " days, ");
         }
 
         if(seconds >= 3600 ){
-            int hours = seconds / 3600;
+            int hours = seconds % 3600;
             seconds = seconds - 3600;
             result.append(hours).append( hours == 1 ? " hour, " : "hours, ");
         }
 
         if(seconds > 60) {
-            int minutes = seconds / 60;
+            int minutes = seconds % 60;
             seconds = seconds - minutes * 60;
             result.append(minutes).append( minutes == 1 ? " minute " : " minutes");
         }

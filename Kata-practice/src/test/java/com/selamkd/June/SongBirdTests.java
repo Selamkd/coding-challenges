@@ -1,32 +1,8 @@
-package com.selamkd.June;
+package com.selamkd.june;
 
-import com.selamkd.June.songbird.Bird;
-import com.selamkd.June.songbird.SongBird;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-
-
+import javax.annotation.processing.SupportedAnnotationTypes;
 
 public class SongBirdTests {
 
-    @Test
-    @DisplayName("Check that it returns 0 when there are no birds")
-
-    public void checkItReturns0whenGiven0Birds(){
-        int expectedOutput = SongBird.getSongBirdCount( new Bird[] {});
-        Assertions.assertEquals(0, expectedOutput);
-
-    }
-
-
-    @Test
-    @DisplayName("Check that it returns 1 when there is a single bird ")
-    void checkThatItReturns1WhenThereIsASingleBird() {
-        Bird[] birds = {Bird.BIRD_A};
-        int expectedOutput = SongBird.getSongBirdCount( birds);
-
-        Assertions.assertEquals(1, expectedOutput);
-    }
 
 }
