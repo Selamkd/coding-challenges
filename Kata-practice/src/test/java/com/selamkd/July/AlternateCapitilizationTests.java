@@ -6,7 +6,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class AlternateCapitilizationTests {
-    
 
     @Test
     @DisplayName("Given str 'abcdef' should return 'aBcDeF & AbCdEf'")
