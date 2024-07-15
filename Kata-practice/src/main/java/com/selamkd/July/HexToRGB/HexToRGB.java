@@ -7,7 +7,6 @@ public class HexToRGB {
         System.out.println(hexStringToRGB("#111111"));
     }
     public static HashMap<String, Integer> hexStringToRGB(String hex) {
-
         // hex -> {r, g, b}
         HashMap<String, Integer> rgbMap = new HashMap<>();
 
