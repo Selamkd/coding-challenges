@@ -2,7 +2,7 @@
 A repository for practicing problem-solving katas, organised by month.
 
 ## Description 
-This repository is dedicated to improving my problem-solving skills through regular practice of katas sourced from CodeWars, LeetCode, and Codurance. Each day, a new kata is added along with corresponding tests, and these katas are organised into monthly directories. This structured approach helps in tracking my progress and ensures consistent practice.
+This repository is dedicated to improving my problem-solving skills through regular practice of katas sourced from CodeWars, LeetCode, and Codurance. Each week new katas are added along with corresponding tests, and these katas are organised into monthly directories. This structured approach helps in tracking my progress and ensures consistent practice.
 
 ### Installation 
   1. Clone the repository: 
