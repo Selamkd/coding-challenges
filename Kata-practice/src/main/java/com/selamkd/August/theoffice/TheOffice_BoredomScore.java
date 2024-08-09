@@ -2,7 +2,7 @@ package com.selamkd.August.theoffice;
 import java.util.Map;
 import java.util.Arrays;
 
-public class TheOffice {
+public class TheOffice_BoredomScore {
     public static String boredom(Person[] staff) {
         Map<String, Integer> teams = Map.of(
                 "accounts", 1,
