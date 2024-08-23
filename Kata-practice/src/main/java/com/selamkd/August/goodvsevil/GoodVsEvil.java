@@ -1,6 +1,4 @@
 package com.selamkd.August.goodvsevil;
-
-import java.sql.SQLOutput;
 import java.util.Map;
 
 public class GoodVsEvil {
@@ -18,39 +16,39 @@ public class GoodVsEvil {
         int evilTotal = 0;
         int goodTotal = 0;
 
-        goodAmounts = evilAmounts.replaceAll(" ", "");
-        char[] evilChar = evilAmounts.toCharArray();
+        goodAmounts = goodAmounts.replaceAll(" ", "");
         evilAmounts = evilAmounts.replaceAll(" ", "");
-        char[] goodChar = goodAmounts.toCharArray();
-        for (int i = 0; i < evilChar.length; i++) {
 
+        char[]  goodCharArr = goodAmounts.toCharArray();
+        for(int i = 0; i < goodCharArr.length - 1; i++){
+            String goodKey = getGoodKey(i + 1);
+
+            if(forceGoodWorth.containsKey(goodKey)){
+                int raceWorth = forceGoodWorth.get(goodKey);
+                int totalRaceWorth = Character.getNumericValue(goodCharArr[i]) * raceWorth;
+                goodTotal+=totalRaceWorth;
+            }
+        }
+        char[]  evilCharArr = evilAmounts.toCharArray();
+        for(int i = 0; i < evilCharArr.length - 1; i++){
             String evilKey = getEvilKey(i + 1);
-            int evilCount = evilChar[i] - '0';
-            if (evilChar[i] != '0') {
-                int evilWorth = forceEvilWorth.get(evilKey);
 
-
-                int evilForce = evilCount * evilWorth;
-                evilTotal += evilForce;
+            if(forceEvilWorth.containsKey(evilKey)){
+                int raceWorth = forceEvilWorth.get(evilKey);
+                int totalRaceWorth = Character.getNumericValue(goodCharArr[i]) * raceWorth;
+                evilTotal+=totalRaceWorth;
             }
-
-        }
-        for (int j = 0; j < goodChar.length; j++) {
-
-            String goodKey = getGoodKey(j + 1);
-            int goodCount = goodChar[j] - '0';
-            if(goodChar[j]  != '0') {
-                int goodWorth = forceGoodWorth.get(goodKey);
-                int goodForce = goodCount * goodWorth;
-                goodTotal+=goodForce;
-            }
-
-
-
-
         }
 
-        return"";
+        if(goodTotal < evilTotal){
+            return  "Battle Result: Evil eradicates all trace of Good";
+        }else if(evilTotal < goodTotal){
+            return "Battle Result: Good triumphs over Evil";
+        }else{
+            return "Battle Result: No victor on this battle field";
+        }
+
+
 
 }
    private  static String getEvilKey(int order) {
