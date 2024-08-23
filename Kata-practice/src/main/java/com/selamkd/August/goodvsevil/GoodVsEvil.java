@@ -25,7 +25,7 @@ public class GoodVsEvil {
 
             if(forceGoodWorth.containsKey(goodKey)){
                 int raceWorth = forceGoodWorth.get(goodKey);
-                int totalRaceWorth = Character.getNumericValue(goodCharArr[i]) * raceWorth;
+                int totalRaceWorth = Integer.parseInt(String.valueOf(goodCharArr[i])) * raceWorth;
                 goodTotal+=totalRaceWorth;
             }
         }
@@ -35,7 +35,7 @@ public class GoodVsEvil {
 
             if(forceEvilWorth.containsKey(evilKey)){
                 int raceWorth = forceEvilWorth.get(evilKey);
-                int totalRaceWorth = Character.getNumericValue(goodCharArr[i]) * raceWorth;
+                int totalRaceWorth = Integer.parseInt(String.valueOf(goodCharArr[i])) * raceWorth;
                 evilTotal+=totalRaceWorth;
             }
         }
