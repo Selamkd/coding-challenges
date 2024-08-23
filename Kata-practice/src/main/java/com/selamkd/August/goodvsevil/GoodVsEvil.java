@@ -41,8 +41,6 @@ public class GoodVsEvil {
             int goodCount = goodChar[j] - '0';
             if(goodChar[j]  != '0') {
                 int goodWorth = forceGoodWorth.get(goodKey);
-
-
                 int goodForce = goodCount * goodWorth;
                 goodTotal+=goodForce;
             }
