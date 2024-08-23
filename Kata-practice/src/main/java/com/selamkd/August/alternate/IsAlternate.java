@@ -5,12 +5,18 @@ public class IsAlternate {
         System.out.println(isAlt("banana"));
     }
     public static boolean isAlt(String word) {
-        String firstLetter = String.valueOf(word.charAt(0));
-        String lastLetter =   String.valueOf(word.charAt(word.length() - 1));
-        if(isVowel(firstLetter) && !isVowel(lastLetter) || !isVowel(firstLetter) && isVowel(lastLetter)){
-            return true;
+        boolean result = false;
+        String[] wordArr = word.split("");
+        for(int i = 0; i < wordArr.length; i+=2){
+            if(isVowel(wordArr[i + 1]) && !isVowel(wordArr[i])){
+               result = true;
+            } else if(isVowel(wordArr[i]) && !isVowel(wordArr[i + 1])){
+                result = true;
+            }else{
+                result = false;
+            }
         }
-        return false;
+        return result;
     }
 
     private static boolean isVowel(String c){
