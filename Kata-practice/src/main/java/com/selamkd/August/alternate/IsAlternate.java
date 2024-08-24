@@ -20,9 +20,4 @@ public class IsAlternate {
             return true;
         } else return evenIndexed.chars().allMatch(c -> "(?i)[b-df-hj-np-tv-z]".indexOf(c) >= 0);
     }
-
-    private static boolean isVowel(String c){
-        String VOWELS = "aeiouAEIOU";
-        return VOWELS.contains(c);
-    }
 }
