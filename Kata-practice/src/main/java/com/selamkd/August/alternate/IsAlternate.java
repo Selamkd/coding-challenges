@@ -4,19 +4,21 @@ public class IsAlternate {
     public static void main(String[] args) {
         System.out.println(isAlt("banana"));
     }
+
     public static boolean isAlt(String word) {
-        boolean result = false;
-        String[] wordArr = word.split("");
-        for(int i = 0; i < wordArr.length; i+=2){
-            if(isVowel(wordArr[i + 1]) && !isVowel(wordArr[i])){
-               result = true;
-            } else if(isVowel(wordArr[i]) && !isVowel(wordArr[i + 1])){
-                result = true;
-            }else{
-                result = false;
-            }
+        StringBuilder evenIndexed = new StringBuilder();
+        StringBuilder oddIndexed = new StringBuilder();
+        char[] wordArr = word.toCharArray();
+        for (int i = 0; i < wordArr.length; i++) {
+           if(i % 2 == 0){
+               evenIndexed.append(wordArr[i]);
+           }else{
+               oddIndexed.append(wordArr[i]);
+           }
         }
-        return result;
+        if(evenIndexed.chars().allMatch(c -> "[aeiouAEIOU]".indexOf(c) >= 0)){
+            return true;
+        } else return evenIndexed.chars().allMatch(c -> "(?i)[b-df-hj-np-tv-z]".indexOf(c) >= 0);
     }
 
     private static boolean isVowel(String c){
