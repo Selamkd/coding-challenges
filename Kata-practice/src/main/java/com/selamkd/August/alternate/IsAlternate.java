@@ -1,23 +1,27 @@
 package com.selamkd.August.alternate;
 
+import static com.selamkd.May.ConsonantsToUpperCase.isVowel;
+
 public class IsAlternate {
     public static void main(String[] args) {
-        System.out.println(isAlt("banana"));
+        System.out.println(isAlt("apple"));
     }
 
     public static boolean isAlt(String word) {
-        StringBuilder evenIndexed = new StringBuilder();
-        StringBuilder oddIndexed = new StringBuilder();
+
         char[] wordArr = word.toCharArray();
-        for (int i = 0; i < wordArr.length; i++) {
-           if(i % 2 == 0){
-               evenIndexed.append(wordArr[i]);
-           }else{
-               oddIndexed.append(wordArr[i]);
-           }
+        for (int i = 0; i < wordArr.length - 1; i++) {
+            for (int j = i + 1; j < wordArr.length; j++) {
+                if(isVowel(wordArr[i]) && !isVowel(wordArr[j])){
+                    return true;
+                }
+                if(isVowel(wordArr[j]) && !isVowel(wordArr[i])) {
+                    return true;
+                }
+                break;
+            }
         }
-        if(evenIndexed.chars().allMatch(c -> "[aeiouAEIOU]".indexOf(c) >= 0)){
-            return true;
-        } else return evenIndexed.chars().allMatch(c -> "(?i)[b-df-hj-np-tv-z]".indexOf(c) >= 0);
+        return false;
     }
+
 }

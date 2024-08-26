@@ -17,7 +17,7 @@ public class ConsonantsToUpperCase {
         return result.toString();
     }
 
-    private static boolean isVowel(char letter){
+    public static boolean isVowel(char letter){
         return "[aeiouAEIOU]".indexOf(letter) != -1;
     }
 }
