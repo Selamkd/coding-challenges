@@ -1,5 +1,5 @@
-# Are we alternate?
-[Link](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/java)
+# Duplicate Encoder
+[Link](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c)
 
 #### 26 Aug 2024
 
