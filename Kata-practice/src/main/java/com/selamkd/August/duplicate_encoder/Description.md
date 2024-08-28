@@ -1,5 +1,5 @@
 # Duplicate Encoder
-[Link](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c)
+[Link](https://www.codewars.com/kata/54da539698b8a2ad76000228)
 
 #### 26 Aug 2024
 
