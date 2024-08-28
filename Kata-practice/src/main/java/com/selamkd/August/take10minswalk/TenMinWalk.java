@@ -3,27 +3,26 @@ package com.selamkd.August.take10minswalk;
 public class TenMinWalk {
     public static boolean isValid(char[] walk) {
 
-        if(walk.length == 10) return true;
-        int n =0;
-        int s = 0;
-        int e = 0;
-        int w = 0;
+        int ns =0;
+        int ew = 0;
 
         for(char ch : walk){
             switch(ch){
                 case 'n':
-                    n+=1;
+                    ns+=1;
+                    break;
                 case 's':
-                    s+=1;
+                    ns-=1;
+                    break;
                 case 'w':
-                    w+=1;
+                    ew-=1;
+                    break;
                 case 'e':
-                    e+=1;
+                    ew+=1;
+                    break;
 
             }
         }
-
-
-        return (n == 0 && s == 0 && e == 0 && w == 0 );
+        return ns == 0 && ew == 0 && walk.length == 10;
     }
 }
