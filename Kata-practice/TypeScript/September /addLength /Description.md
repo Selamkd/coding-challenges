@@ -1,7 +1,7 @@
 ### Add Length
-[Link](https://www.codewars.com/kata/59d9ff9f7905dfeed50000b0/train/java)
+[Link](https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/typescript)
 
-#### 5 Jun 2024
+#### 5 Sep 2024
 
 What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
 
