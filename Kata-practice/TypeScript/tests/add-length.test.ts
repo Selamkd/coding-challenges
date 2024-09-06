@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import {addLength} from "../September /addLength /add-length";
+import {addLength} from "../september/addLength /add-length";
 
 test("given 'you will win' should return 'you 3' , 'will 4', 'win 3' ", () => {
     const expected: string[] = ["you 3", "will 4", "win 3"];
