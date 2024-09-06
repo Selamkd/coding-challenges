@@ -1,21 +1,10 @@
-import { logger } from "../../utils/logger";
 export function order(words) {
-    let result = "";
-    let highest = 0;
-    for (let i = 0; i < words.length; i++) {
-        const word = words[i];
-        if (isNum(word[i])) {
-            const num = parseInt(word[i]);
-            if (num > highest) {
-                highest = num;
-            }
-        }
-        result += word[i];
-    }
+    const wordsArr = [];
+    const result = wordsArr.sort((a, b) => getNum(a) - getNum(b)).join(" ");
     return result;
 }
-logger.info(order("this1 i3 a te4st"));
-function isNum(char) {
-    const numPattern = /^[+-]?(\d+(\.\d*)?|\.\d+)$/;
-    return numPattern.test(char);
+function getNum(word) {
+    const num = word.match(/\d+/);
+    return num ? parseInt(num[0], 10) : 0;
 }
+console.log(order("this1 i3 a te4st"));
