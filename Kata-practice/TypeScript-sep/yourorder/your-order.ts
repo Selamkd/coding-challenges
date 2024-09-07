@@ -4,7 +4,7 @@ export function order(words: string): string {
   return wordsArr.sort((a, b) => getNum(a) - getNum(b)).join(" ");
 }
 
-function getNum(word: string): number {
+export function getNum(word: string): number {
   const num = word.match(/\d+/);
   return num ? parseInt(num[0], 10) : 0;
 }
