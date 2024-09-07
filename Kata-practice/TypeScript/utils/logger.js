@@ -1,7 +1,9 @@
-import { createLogger, format, transports } from "winston";
+import { createLogger, format, transports } from 'winston';
 const logger = createLogger({
     level: 'info', // logging level
-    format: format.combine(format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }), format.errors({ stack: true }), format.splat(), format.json() // can also use format.simple() or format.prettyPrint() for different formats
+    format: format.combine(
+    // format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+    format.errors({ stack: true }), format.splat(), format.simple() // can also use format.simple() or format.prettyPrint() for different formats
     ),
     transports: [
         new transports.Console({

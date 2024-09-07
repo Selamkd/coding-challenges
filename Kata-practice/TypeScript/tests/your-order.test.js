@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { order } from "../september/yourorder/your-order";
+import { order } from "../yourorder/your-order";
 test("given 'my2 find1 horse3' should return 'find1 my2 horse3'", () => {
     const expected = "find1 my2 horse3";
     const actual = order("my2 find1 horse3");
