@@ -1,10 +1,4 @@
 export function cuckooClock(inputTime: string, chimes:number):string {
-/// chicken chimes at beginning of each hour, quarter-hour, halfhour and three-quarter hour
-    // given current time and a num determine when the chicken has chimes num times
-    // return: the time when the bird has chimed n times
-    // if chicken chimes at initial time - include in count
-    //
-
     for(let i = 0; i < chimes; i++){
         const[hour, minutes] = inputTime.split(':');
         let totalMinutes = parseInt(hour) * 60 + parseInt(minutes) ;
