@@ -1,8 +1,8 @@
 export function cuckooClock(inputTime: string, chimes:number):string {
     for(let i = 0; i < chimes; i++){
         const[hour, minutes] = inputTime.split(':');
-        let totalMinutes = parseInt(hour) * 60 + parseInt(minutes) ;
-        totalMinutes += 15;
+        let totalMinutes = parseInt(hour) * 60 ;
+        totalMinutes = totalMinutes += 15;
 
         const updatedHour =  Math.floor(totalMinutes / 60) % 24;
         const updatedMinutes = parseInt(minutes) % 60;
@@ -11,4 +11,4 @@ export function cuckooClock(inputTime: string, chimes:number):string {
     }
     return inputTime
 }
-cuckooClock("7:20",10);
+console.log(cuckooClock("7:22",10));
