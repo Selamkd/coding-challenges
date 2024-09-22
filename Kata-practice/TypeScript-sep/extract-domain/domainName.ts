@@ -4,6 +4,12 @@ function domainName(url:string):string{
    * (/.+\/\/)- a protocol prefix like http:// or https://
    *  (www) - part of the url
    * (\..+) - domain extension like .com, .org..etc
+   *   url = url.replace("https://", '');
+       url = url.replace("http://", '');
+       url = url.replace("www.", '');
+       return url.split('.')[0];
+   *
+   *
    * */
     return url.replace(/.+\/\/|www.|\..+/g, '');
 }
