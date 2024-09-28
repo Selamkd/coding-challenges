@@ -1,5 +1,5 @@
 import {expect, test} from "vitest";
-import {mostLikely} from "../most-likely/mostLikely.ts";
+import {mostLikely} from "../most-likely/mostLikely.js";
 
 test("given 1:3 and 1:2 should return false'", () => {
     const expected= false;

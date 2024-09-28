@@ -1,4 +1,4 @@
-function generateHashtag (str:string):string{
+export function generateHashtag (str:string){
 
     return "#####";
 }
