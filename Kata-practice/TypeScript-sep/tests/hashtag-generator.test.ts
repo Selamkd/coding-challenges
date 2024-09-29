@@ -19,13 +19,13 @@ test("given str input - should return #DoWeHaveAHashtag", () => {
     expect(actual).toEqual(expected);
 })
 test("given str input - should return #Codewars", () => {
-    const expected= "Codewars";
+    const expected= "#Codewars";
     const input = "#Codewars"
     const actual = generateHashtag(input);
     expect(actual).toEqual(expected);
 })
 test("given str input - should return #CodewarsIsNice", () => {
-    const expected= "Codewars Is Nice";
+    const expected= "#Codewars Is Nice";
     const input = "#CodewarsIsNice"
     const actual = generateHashtag(input);
     expect(actual).toEqual(expected);
