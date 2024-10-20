@@ -1,4 +1,4 @@
-import logger from "../utils/logger.ts"
+import logger from "../../utils/logger.ts"
 
 export function spinWords(words: string): string {
     const wordArray = words.split(" ");

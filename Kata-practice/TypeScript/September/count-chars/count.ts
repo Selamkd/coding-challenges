@@ -1,4 +1,4 @@
-import {getOrDefault} from "../utils/helpers.ts"
+import {getOrDefault} from "../../utils/helpers.ts"
 function count(str: string): {[key:string] : number}{
     let countMap: Map<string, number> = new Map();
     if(!str){

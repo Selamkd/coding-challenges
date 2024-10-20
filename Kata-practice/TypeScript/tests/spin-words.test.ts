@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import {spinWords} from "../spin-words/spinWords.ts";
+import {spinWords} from "../September/spin-words/spinWords.ts";
 
 
 test("given 'Hey fellow warriors' should return 'Hey wollef sroirraw'", () => {

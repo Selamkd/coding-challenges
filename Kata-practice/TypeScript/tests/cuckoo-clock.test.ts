@@ -1,5 +1,5 @@
 import {test, expect} from 'vitest';
-import {cuckooClock} from "../cuckoo-clock/cuckooClock.ts"
+import {cuckooClock} from "../September/cuckoo-clock/cuckooClock.ts"
 
 test("Basic test", () =>{
     const inputTimes =  ["07:22", "12:22", "01:30", "04:01", "03:38"];

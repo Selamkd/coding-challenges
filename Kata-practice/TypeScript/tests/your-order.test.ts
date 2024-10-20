@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import {order} from "../yourorder/your-order.ts";
+import {order} from "../September/yourorder/your-order.ts";
 
 
 test("given 'my2 find1 horse3' should return 'find1 my2 horse3'", () => {

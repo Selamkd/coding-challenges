@@ -1,4 +1,4 @@
-import logger from "../utils/logger.ts"
+import logger from "../../utils/logger.ts"
 export function order(words: string): string {
   const wordsArr: string[] = words.split(" ");
   return wordsArr.sort((a, b) => getNum(a) - getNum(b)).join(" ");

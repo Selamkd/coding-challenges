@@ -1,6 +1,6 @@
 
 import {expect, test} from "vitest";
-import {generateHashtag} from "../hashtag-generator/theHashTagGenerator.ts"
+import {generateHashtag} from "../September/hashtag-generator/theHashTagGenerator.ts"
 
 test("given an empty str - should return false'", () => {
     const expected= false;

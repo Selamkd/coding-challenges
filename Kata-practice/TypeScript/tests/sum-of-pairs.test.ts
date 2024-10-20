@@ -1,4 +1,4 @@
-import {sumPairs} from "../sumofpairs/sumOfPairs.ts";
+import {sumPairs} from "../September/sumofpairs/sumOfPairs.ts";
 import {test, expect} from "vitest";
 const list1:number[] = [1, 4, 8, 7, 3, 15],
       list2:number[] = [1, -2, 3, 0, -6, 1],
